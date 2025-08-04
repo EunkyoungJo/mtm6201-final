@@ -23,16 +23,16 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <!-- Navigation links -->
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav flex-lg-row flex-column align-items-lg-center align-items-end text-end">
+                    <li class="nav-item px-lg-2">
+                        <a class="nav-link px-5" href="#">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Available Pets</a>
+                    <li class="nav-item px-lg-2">
+                        <a class="nav-link px-4" href="#">Available Pets</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                    <li class="nav-item px-lg-2">
+                        <a class="nav-link px-5" href="#">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -41,31 +41,31 @@
 
     <!-- Layout starts with mobile first structure -->
     <main class="container py-4">
-        <!-- Hero section with featured image and message -->
         <section class="mb-4">
-            <div class="bg-light rounded p-3 d-flex flex-column flex-md-row align-items-center justify-content-between">
-               <!-- Mobile only text -->
-               <div class="d-md-none">
-                 <h1 class="fs-5 mb-1">Love Starts Here</h1>
-                 <p class="mb-2 small">These animals are more than just cute faces.</p>
-                 <button class="btn btn-outline-dark btn-sm">Learn More</button>                                    
-               </div>
+            <!-- Responsive flex layout for mobile and tablet/desktop -->
+            <div class="bg-light p-3 d-flex flex-row flex-sm-row-reverse flex-md-row align-items-center justify-content-between">
+               <picture class="me-3 p-4 order-1 order-sm-1 order-md-2 mb-3 mb-sm-0 flex-shrink-0">
+                 <source srcset="images/Hero_image-desktop.png" media="(min-width: 1200px)">
+                 <source srcset="images/Hero_image-tablet.png" media="(min-width: 600px) and (max-width: 1199px)">
+                 <source srcset="images/Hero_image-mobile.png" media="(max-width: 599px)">
+                 <img src="images/Hero_image-mobile.png" alt="Hero dog" class="img-fluid rounded w-100">
+               </picture>  
 
-               <!-- Tablet/Desktop version -->
-               <div class="d-none d-md-flex flex-md-row align-items-center w-100 justyfy-content-between">
-                <div class="me-md-3">
-                    <h1 class="fs-4">Love stars Here</h1>
-                    <p class="mb-3">These animals are more than just cute faces—they’re waiting for a second chance. Our design brings warmth, trust, and hope to people like Emily who are searching for a new best friend. We keep it bright, welcoming, and simple—just like the adoption process should be.</p>
-                    <button class="btn btn-outline-dark btn-sm">Learn More</button>                      
-                </div>
-                <picture>
-                    <source srcset="images/Hero_image-desktop.png" media="(min-width: 992px)">
-                    <source srcset="images/Hero_image-tablet.png" media="(min-width: 768px)">
-                    <img src="images/Hero_image-mobile.png" alt="a brown dog" class="rounded" style="width: 159px; height: 115px; object-fit: cover;">
-                </picture>
-               </div>
+               <!-- Shorter text for mobile, full text for tablet/desktop -->
+               <div class="order-2 order-sm-2 order-md-1 text-left text-md-start">
+                 <h1 class="fs-4">Love Starts Here</h1>
+                 <p class="mb-3">
+                     <span class="d-inline d-md-none">These animals are more than just cute faces.</span>
+                     <span class="d-none d-md-inline">
+                        These animals are more than just cute faces—they’re waiting for a second chance. Our design brings warmth, trust, and hope to people like Emily who are searching for a new best friend. We keep it bright, welcoming, and simple—just like the adoption process should be.
+                     </span>      
+                 </p>
+                 <button class="btn btn-outline-dark btn-sm">Learn More</button>                                  
+               </div>             
             </div>
         </section>
+
+        
      
               
     </main>
