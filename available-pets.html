@@ -64,7 +64,7 @@
         <section class="Adoption-message mb-5">
                        
             <!-- layout for mobile only -->
-            <div class="d-sm-none d-flex flex-row align-items-center text-left gap-4 p-4" style="background-color: #EAF6FB;">
+            <div class="d-md-none d-flex flex-row align-items-center text-left gap-4 p-4" style="background-color: #EAF6FB;">
                 <img src="images/lucy.jpg" class="img-fluid rounded-4 ms-2 mb-3" alt="a dog named Lucy">
                 <div class="adoption-text flex-column">
                     <h2 class="fw-bold text-left">Give them a real<br>Chance</h2>
@@ -75,42 +75,42 @@
             </div>
 
             <!-- layout for desktop and tablet -->
-            <div class="pet-group py-5 p-5" style="background-color: #EAF6FB;">
+            <div class="d-none d-md-block py-5 p-4" style="background-color: #EAF6FB;">
                 <h2 class="fw-bold mb-4 text-center text-md-start">Give them a real Chance</h2>
                 <div class="row g-4 justify-content-center justify-content-md-start">
-                    <div class="col-10 col-sm-6 col-md-4">
+                    <div class="col-12 col-sm-6 col-md-4">
                         <picture>
                             <source srcset="images/Duke-desktop.jpg" media="(min-width:1200px)">
                             <source srcset="images/Duke-tablet.jpg" media="(min-width:600px) and (max-width:1199px)">
                             <img src="images/Duke-mobile.jpg" alt="a dog named Duke" class="img-fluid rounded-4">
                         </picture>
-                        <p class="mt-4"><strong>Name:</strong> Duke</p>
+                        <p><strong>Name:</strong> Duke</p>
                         <p><strong>Age:</strong> 6 years old</p>
                         <p><strong>Gender:</strong> Male</p>
                         <p><strong>Breed:</strong> Jack Russell Terrier Mix</p>
                         <p><strong>Character:</strong> Calm, Gentle</p>
                     </div>
 
-                    <div class="col-10 col-sm-6 col-md-4">
+                    <div class="col-12 col-sm-6 col-md-4">
                         <picture>
                             <source srcset="images/Sophie-desktop.jpg" media="(min-width:1200px)">
                             <source srcset="images/Sophie-tablet.jpg" media="(min-width:600px) and (max-width:1199px)">
                             <img src="images/Sophie-mobile.jpg" alt="a cat named Sophie" class="img-fluid rounded-4">
                         </picture>
-                        <p class="mt-4"><strong>Name:</strong> Sophie</p>
+                        <p><strong>Name:</strong> Sophie</p>
                         <p><strong>Age:</strong> 3 years old</p>
                         <p><strong>Gender:</strong> Female</p>
                         <p><strong>Breed:</strong> Domestic Shorthair</p>
                         <p><strong>Character:</strong> Chatty, Affectionate</p>
                     </div>
 
-                    <div class="col-10 col-sm-6 col-md-4">
+                    <div class="col-12 col-sm-6 col-md-4">
                         <picture>
                             <source srcset="images/Cinnamon-desktop.png" media="(min-width:1200px)">
                             <source srcset="images/Cinnamon-tablet.png" media="(min-width:600px) and (max-width:1199px)">
                             <img src="images/Cinnamon-mobile.png" alt="a rabbit named Cinnamon" class="img-fluid rounded-4">
                         </picture>
-                        <p class="mt-4"><strong>Name:</strong> Cinnamon</p>
+                        <p><strong>Name:</strong> Cinnamon</p>
                         <p><strong>Age:</strong> 1 years old</p>
                         <p><strong>Gender:</strong> Female</p>
                         <p><strong>Breed:</strong> Holland Lop</p>
@@ -119,8 +119,37 @@
                 </div>
             </div>
         </section>
+        
+        <!-- Adoption call-to-action section -->
+        <section class="adoption-cta text-center text-md-start px-4 py-5">
 
-            
+            <!-- Layout for mobile only -->
+            <div class="d-md-none p-4" style="background-color: #FFE9F4;">
+                <h2 class="fw-bold fs-5 mb-3">Start Your Adoption Journey Today</h2>
+                <p class="mb-4">Sign up or contact us</p>
+                <div class="d-flex justify-content-center gap-3">
+                    <button class="btn btn-dark rounded-4 px-4">Adopt Now</button>
+                    <butoon class="btn btn-outline-dark rounded-4 px-4">Contact</butoon>                    
+                </div>
+            </div>
+
+            <!-- Layout for tablet & desktop -->
+            <div class="d-none d-md-block" style="background-color: #FFFBEA;">
+                <div class="container py-5 px-3 px-md-5">
+                    <h2 class="fw-bold fs-4 mb-4">Start Your Adoption Journey Today</h2>
+                    <p class="mb-4">
+                        Take the first step toward welcoming a furry friend into your life. Fill out our quick adoption inquiry form—it only takes a few minutes! Tell us a bit about your life style and preferences, and we’ll help you find a pet that’s just the right match. Whether you’re looking for a playful puppy, a cuddly kitten, or a calm companion, we’re here to guide you every step of the way.
+                    </p>
+                    <div class="d-flex flex-wrap gap-3">
+                        <button class="btn btn-dark rounded-4 px-4">Adopt Now</button>
+                        <button class="btn btn-outline-dark rounded-4 px-4">Contact</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+       
+
 
 </body>
 </html>
