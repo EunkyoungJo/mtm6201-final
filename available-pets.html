@@ -19,7 +19,7 @@
                 <img src="images/logo-pawsitive-futures.svg" alt="Pawsitive Futures Logo" height="45">
             </a>
             <!-- Toggle button for mobile & tablet views only-->
-            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" style="background-color: #FFE9F4;">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <!-- Navigation links -->
@@ -43,9 +43,24 @@
     <main class="container py-5">
         <section class="mb-4">
             <form class="d-flex justify-content-center">
-                <input type="search" class="form-control w-90 w-md-50 rounded-4" style="background-color: #EAF6FB;" placeholder="Search by breed...">
+                <input type="search" class="form-control rounded-4" style="background-color: #EAF6FB;" placeholder="Search by breed...">
             </form>
         </section>
+        
+        <!-- h1 with buttons for animal info -->
+        <section class="h1-with-button mb-5 text-center">
+            <div class="order-2 order-sm-2 order-md-1 text-left text-md-start">
+                <h1 class="fs-4 fw-bold mb-4 text-center">Available Pets</h1>
+            </div>
+            
+            <div class="animal-info-btn">
+                <button class="btn btn-dark mx-1 rounded-4">Dogs</button>
+                <button class="btn btn-dark mx-1 rounded-4">Cats</button>
+                <button class="btn btn-dark mx-1 rounded-4">Others</button>
+            </div>            
+        </section>
+
+       
             
 
 </body>
