@@ -17,6 +17,30 @@ body {
     padding: 0;
 }
 
+/* navigation styles */
+.navbar {
+    background-color: var(--accent-color);
+}
+
+.nabar-toggler {
+    background-color: var(--light-pink);
+}
+
+.nav-link {
+    color: var(--primary-color);
+    padding: 0.5rem 1rem;
+}
+
+.nav-link:hover {
+    color: #0000FF;
+}
+
+
+
+
+
+
+
 /* adjust size for tablet & desktop (Testimonial section)*/
 .profile-card {
     padding: 1.5rem;
