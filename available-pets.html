@@ -20,26 +20,25 @@
 <body>
     <!-- Fixed top nav for easy access to key sections on all screen sizes -->
     <nav class="navbar navbar-expand-lg sticky-top" style="background-color: #CEF8E6;">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
+        <div class="container">
+            <a href="index.html" class="navbar-logo">
                 <img src="images/logo-pawsitive-futures.svg" alt="Pawsitive Futures Logo" height="45">
             </a>
             <!-- Toggle button for mobile & tablet views only-->
-            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                style="background-color: #FFE9F4;">
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" style="background-color: #FFE9F4;">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <!-- Navigation links -->
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav flex-lg-row flex-column align-items-lg-center align-items-end text-end">
                     <li class="nav-item px-lg-2">
-                        <a class="nav-link px-5" href="#">Home</a>
+                        <a class="nav-link px-5" href="index.html">Home</a>
                     </li>
                     <li class="nav-item px-lg-2">
-                        <a class="nav-link px-4" href="#">Available Pets</a>
+                        <a class="nav-link px-4" href="available-pets.html">Available Pets</a>
                     </li>
                     <li class="nav-item px-lg-2">
-                        <a class="nav-link px-5" href="#">Contact</a>
+                        <a class="nav-link px-5" href="contact.html">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -47,18 +46,17 @@
     </nav>
 
     <!-- Layout starts with mobile first structure -->
-    <main class="container py-5">
+    <main class="container py-3">
         <section class="mb-4">
             <form class="d-flex justify-content-center">
-                <input type="search" class="form-control rounded-4" style="background-color: #EAF6FB;"
-                    placeholder="Search by breed...">
+                <input type="search" class="form-control rounded-4" style="background-color: #EAF6FB;" placeholder="Search by breed...">
             </form>
         </section>
 
         <!-- h1 with buttons for animal info -->
         <section class="h1-with-button mb-5 text-center">
             <div class="order-2 order-sm-2 order-md-1 text-left text-md-start">
-                <h1 class="fs-4 fw-bold mb-4 text-center">Available Pets</h1>
+                <h1 class="fw-bold mb-4 text-center">Available Pets</h1>
             </div>
 
             <div class="d-flex flex-row px-5 justify-content-between">
@@ -69,7 +67,7 @@
         </section>
 
         <!-- Adoption recommendation section -->
-        <section class="Adoption-message mb-5">
+        <section class="adoption-message mb-5">
 
             <!-- layout for mobile only -->
             <div class="d-md-none d-flex flex-row align-items-center text-left gap-4 p-4"
@@ -85,9 +83,9 @@
 
             <!-- layout for desktop and tablet -->
             <div class="d-none d-md-block py-5 p-4" style="background-color: #EAF6FB;">
-                <h2 class="fw-bold mb-4 text-center text-md-start">Give them a real Chance</h2>
-                <div class="row g-4 justify-content-center justify-content-md-start">
-                    <div class="col-12 col-sm-6 col-md-4">
+                <h2 class="fw-bold mb-4 ms-5 text-center text-md-start">Give them a real Chance</h2>
+                <div class="row g-4 ms-4 justify-content-center">
+                    <div class="col-12 col-sm-6 col-md-4 align-items-center">
                         <picture>
                             <source srcset="images/Duke-desktop.jpg" media="(min-width:1200px)">
                             <source srcset="images/Duke-tablet.jpg" media="(min-width:600px) and (max-width:1199px)">
@@ -116,10 +114,8 @@
                     <div class="col-12 col-sm-6 col-md-4">
                         <picture>
                             <source srcset="images/Cinnamon-desktop.png" media="(min-width:1200px)">
-                            <source srcset="images/Cinnamon-tablet.png"
-                                media="(min-width:600px) and (max-width:1199px)">
-                            <img src="images/Cinnamon-mobile.png" alt="a rabbit named Cinnamon"
-                                class="img-fluid rounded-4">
+                            <source srcset="images/Cinnamon-tablet.png" media="(min-width:600px) and (max-width:1199px)">
+                            <img src="images/Cinnamon-mobile.png" alt="a rabbit named Cinnamon" class="img-fluid rounded-4">
                         </picture>
                         <p><strong>Name:</strong> Cinnamon</p>
                         <p><strong>Age:</strong> 1 years old</p>
@@ -137,10 +133,10 @@
             <!-- Layout for mobile only -->
             <div class="d-md-none p-4" style="background-color: #FFE9F4;">
                 <h2 class="fw-bold fs-5 mb-3">Start Your Adoption Journey Today</h2>
-                <p class="mb-4">Sign up or contact us</p>
-                <div class="d-flex justify-content-center gap-3">
+                <p class="mb-4 ">Sign up or contact us</p>
+                <div class="d-flex justify-content-end gap-3">
                     <button class="btn btn-dark rounded-4 px-4">Adopt Now</button>
-                    <butoon class="btn btn-outline-dark rounded-4 px-4">Contact</butoon>
+                    <a href="contact.html" class="btn btn-outline-dark rounded-4 px-4">Contact</a>
                 </div>
             </div>
 
@@ -156,7 +152,7 @@
                     </p>
                     <div class="d-flex flex-wrap gap-3">
                         <button class="btn btn-dark rounded-4 px-4">Adopt Now</button>
-                        <button class="btn btn-outline-dark rounded-4 px-4">Contact</button>
+                        <a href="contact.html" class="btn btn-outline-dark rounded-4 px-4">Contact</a>
                     </div>
                 </div>
             </div>
@@ -167,8 +163,7 @@
             <!-- Layout for mobile only -->
             <div class="d-md-none p-4" style="background-color: #FFFBEA;">
                 <h2 class="fw-bold fs-5 mb-2">They Waiting for You</h2>
-                <p class="small mb-4">Every pet has a story—some are playful, some are shy, but all of them are hoping
-                    for someone just like you. Meet the animals ready to be part of your family.</p>
+                <p class="small mb-4">Every pet has a story—some are playful, some are shy, but all of them are hoping for someone just like you. Meet the animals ready to be part of your family.</p>
 
                 <div class="d-flex flex-column align-items-center gap-1 mb-4">
                     <picture>
@@ -195,25 +190,22 @@
                 </div>
 
                 <div class="d-flex align-items-center justify-content-between mt-4">
-                    <button class="btn btn-dark rounded-4 px-4">Learn More</button>
+                    <a href="available-pets.html" class="btn btn-dark rounded-4 px-4">Learn More</a>
                     <button class="btn btn-outline-dark rounded-4 px-4">Live Chat</button>
                 </div>
             </div>
 
             <!-- Layout for tablet and desktop -->
-            <div class="d-none d-md-block p-5" style="background-color: #FFFBEA;">
+            <div class="d-none d-md-block p-5" style="background-color: #FFE9F4;">
                 <h2 class="fw-bold mb-2 text-center mb-3">They Waiting for You</h2>
-                <p class="small mb-4 text-center mb-3">Every pet has a story—some are playful, some are shy, but all of
-                    them are hoping for someone just like you. Meet the animals ready to be part of your family.</p>
+                <p class="small mb-4 text-center mb-3">Every pet has a story—some are playful, some are shy, but all of them are hoping for someone just like you. Meet the animals ready to be part of your family.</p>
 
                 <div class="row g-5 justify-content-center text-center text-md-start">
                     <div class="col-12 col-md-4">
                         <picture>
                             <source srcset="images/Bingo_Emma-desktop.jpg" media="(min-width: 1200px)">
-                            <source srcset="images/Bingo_Emma-tablet.jpg"
-                                media="(min-width: 600px) and (max-width: 1199px)">
-                            <img src="images/Bingo_Emma-mobile.jpg" alt="Bingo and Emma"
-                                class="img-fluid rounded-4 mb-3">
+                            <source srcset="images/Bingo_Emma-tablet.jpg" media="(min-width: 600px) and (max-width: 1199px)">
+                            <img src="images/Bingo_Emma-mobile.jpg" alt="Bingo and Emma" class="img-fluid rounded-4 mb-3">
                         </picture>
                         <h3 class="fs-5 text-center">Bingo & Emma</h3>
                     </div>
@@ -221,10 +213,8 @@
                     <div class="col-12 col-md-4">
                         <picture>
                             <source srcset="images/Mochi_Sarah-desktop.jpg" media="(min-width: 1200px)">
-                            <source srcset="images/Mochi_Sarah-tablet.jpg"
-                                media="(min-width: 600px) and (max-width: 1199px)">
-                            <img src="images/Mochi_Sarah-mobile.jpg" alt="Mochi and Sarah"
-                                class="img-fluid rounded-4 mb-3">
+                            <source srcset="images/Mochi_Sarah-tablet.jpg" media="(min-width: 600px) and (max-width: 1199px)">
+                            <img src="images/Mochi_Sarah-mobile.jpg" alt="Mochi and Sarah" class="img-fluid rounded-4 mb-3">
                         </picture>
                         <h3 class="fs-5 text-center">Mochi & Sarah</h3>
                     </div>
@@ -232,18 +222,16 @@
                     <div class="col-12 col-md-4">
                         <picture>
                             <source srcset="images/Oliver_Noah-desktop.jpg" media="(min-width: 1200px)">
-                            <source srcset="images/Oliver_Noah-tablet.jpg"
-                                media="(min-width: 600px) and (max-width: 1199px)">
-                            <img src="images/Oliver_Noah-mobile.jpg" alt="Oliver and Noah"
-                                class="img-fluid rounded-4 mb-3">
+                            <source srcset="images/Oliver_Noah-tablet.jpg" media="(min-width: 600px) and (max-width: 1199px)">
+                            <img src="images/Oliver_Noah-mobile.jpg" alt="Oliver and Noah" class="img-fluid rounded-4 mb-3">
                         </picture>
                         <h3 class="fs-5 text-center">Oliver & Noah</h3>
                     </div>
                 </div>
                 <!-- Buttons for live chat and learn more -->
                 <div class="d-flex align-items-center justify-content-between mt-5">
-                    <button class="btn btn-dark rounded-4 px-4">Learn More</button>
-                    <button class="btn btn-outline-dark rounded-4 px-4">Live Chat</button>
+                    <a href="available-pets.html" class="btn btn-dark rounded-4 px-4">Learn More</a>
+                    <button class="btn live-chat-btn"><img src="images/Live_Chat.svg" alt="Live Chat button"></button>
                 </div>
             </div>
         </section>
@@ -257,12 +245,12 @@
                 <div class="d-flex flex-column">
                     <h3 class="fw-bold mb-3">Follow Us</h3>
                     <div class="d-flex flex-row gap-3">
-                        <a href="#" aria-label="x"><img src="images/X Logo.svg" alt="x icon" height="20"></a>
-                        <a href="#" aria-label="Instagram"><img src="images/Logo Instagram.svg" alt="Instagram icon"
+                        <a href="https://x.com" aria-label="x"><img src="images/X Logo.svg" alt="x icon" height="20"></a>
+                        <a href="https://www.instagram.com" aria-label="Instagram"><img src="images/Logo Instagram.svg" alt="Instagram icon"
                                 height="20"></a>
-                        <a href="#" aria-label="YouTube"><img src="images/Logo YouTube.svg" alt="YouTube icon"
+                        <a href="https://www.youtube.com" aria-label="YouTube"><img src="images/Logo YouTube.svg" alt="YouTube icon"
                                 height="20"></a>
-                        <a href="#" aria-label="LinkedIn"><img src="images/LinkedIn.svg" alt="LinkedIn icon"
+                        <a href="https://www.linkedin.com" aria-label="LinkedIn"><img src="images/LinkedIn.svg" alt="LinkedIn icon"
                                 height="20"></a>
                     </div>
                     <p class="mt-3 small mb-0">&copy; 2025 Pawsitive Futures. <br>All rights reserved.</p>
@@ -281,9 +269,9 @@
                 <div class="d-flex flex-column">
                     <h3 class="fw-bold mb-3">Quick Links</h3>
                     <ul class="list-unstyled d-flex flex-column">
-                        <il><a href="#" class="text-decoration-none">Home</a></il>
-                        <il><a href="#" class="text-decoration-none">Available Pets</a></il>
-                        <il><a href="#" class="text-decoration-none">Contact</a></il>
+                        <li><a href="index.html" class="text-decoration-none">Home</a></li>
+                        <li><a href="available-pets.html" class="text-decoration-none">Available Pets</a></li>
+                        <li><a href="contact.html" class="text-decoration-none">Contact</a></li>
                     </ul>
                 </div>
             </div>

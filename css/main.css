@@ -1,0 +1,58 @@
+/* global style */
+body {
+    background-color: #FDFDEE;
+    color: #4A3526;
+    font-family: 'Nunito', sans-serif;
+    line-height: 1.6;
+}
+
+/* adjust size for tablet & desktop (Testimonial section)*/
+.profile-card {
+    padding: 1.5rem;
+    min-width: 250px;
+    align-items: center;
+}
+
+@media (min-width: 992px) {
+    .profile-card {
+        min-width: 400px;
+    }
+}
+
+ 
+/* adjust button color and hovering */
+.btn-dark {
+    background-color: #4A3526;
+    border-color: #4A3526;
+    color: #FDFDEE;
+}
+
+.btn-dark:hover {
+    background-color: #FDFDEE;
+    border-color: #4A3526;
+    color: #4A3526;
+}
+
+.btn-outline-dark {
+    color: #4A3526;
+    border-color: #4A3526;
+    background-color: #FDFDEE;
+}
+
+.btn-outline-dark:hover {
+    color: #FDFDEE;
+    border-color: #4A3526;
+    background-color: #4A3526;
+}
+
+.live-chat-btn {
+    background-color: transparent;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.live-chat-btn img {
+    height: 70px;
+}
+
