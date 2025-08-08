@@ -1,9 +1,20 @@
 /* global style */
+:root {
+    --padding: 24px;
+    --primary-color: #4A3526;
+    --secondary-color: #FDFDEE;
+    --accent-color: #cef8e6;
+    --light-pink: #FFE9F4;
+    --light-blue: #EAF6FB;
+}
+
 body {
-    background-color: #FDFDEE;
-    color: #4A3526;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
     font-family: 'Nunito', sans-serif;
     line-height: 1.6;
+    margin: 0;
+    padding: 0;
 }
 
 /* adjust size for tablet & desktop (Testimonial section)*/
