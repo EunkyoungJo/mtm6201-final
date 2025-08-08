@@ -58,14 +58,14 @@
             <h1 class="text-center fw-bold mb-4">Contact</h1>
 
             <!-- Add responsive photos for staff info -->
-            <div class="d-flex flex-column flex-md-row align-items-center justify-content-center gap-4 mb-4">
+            <div class="d-flex flex-row align-items-center justify-content-center gap-5 mb-4">
                 <picture>
                     <source srcset="images/contact_person-desktop.jpg" media="(min-width: 1200px)">
                     <source srcset="images/contact_person-tablet.jpg" media="(min-width: 600px) and (max-width: 1199px)">
                     <img src="images/contact_person-mobile.jpg" alt="staff photo" class="img-fluid rounded-circle">
                 </picture>
 
-                <div class="text-center text-md-start">
+                <div class="text-left">
                     <p class="mb-1"><strong>Phone:</strong> 613-123-4567</p>
                     <p class="mb-1"><strong>Email:</strong> info@pawsitivefuture.ca</p>
                     <p class="mb-1"><strong>Hours:</strong> Mon-Fri, 10 am - 6 pm</p>
@@ -100,6 +100,47 @@
                 </form>                
             </div>
         </section>
-    
+    </main>
+
+    <!-- Footer section -->
+    <footer class="footer" style="background-color: #CEF8E6;">
+        <div class="container">
+            <div class="d-flex flex-row p-5 justify-content-between">
+                <!-- Add social icon for Follow us -->
+                <div class="d-flex flex-column">
+                    <h3 class="fw-bold mb-3">Follow Us</h3>
+                    <div class="d-flex flex-row gap-3">
+                        <a href="#" aria-label="x"><img src="images/X Logo.svg" alt="x icon" height="20"></a>
+                        <a href="#" aria-label="Instagram"><img src="images/Logo Instagram.svg" alt="Instagram icon"
+                                height="20"></a>
+                        <a href="#" aria-label="YouTube"><img src="images/Logo YouTube.svg" alt="YouTube icon"
+                                height="20"></a>
+                        <a href="#" aria-label="LinkedIn"><img src="images/LinkedIn.svg" alt="LinkedIn icon"
+                                height="20"></a>
+                    </div>
+                    <p class="mt-3 small mb-0">&copy; 2025 Pawsitive Futures. <br>All rights reserved.</p>
+                </div>
+
+                <!-- Contact info for tablet & desktop-->
+                <div class="d-none d-sm-none d-md-block">
+                    <h3 class="fw-bold mb-3">Pawsitive Futures</h3>
+                    <p class="mb-1">123 Adoption Land, Ottawa, ON K2J 3T5</p>
+                    <p class="mb-1">Phone: (613) 123-4567</p>
+                    <p class="mb-0">Email: <a href="mailto:info@pawsitivefutures.ca">info@pawsitivefutures.ca</a>
+                    </p>
+                </div>
+
+                <!-- Quick links -->
+                <div class="d-flex flex-column">
+                    <h3 class="fw-bold mb-3">Quick Links</h3>
+                    <ul class="list-unstyled d-flex flex-column">
+                        <il><a href="#" class="text-decoration-none">Home</a></il>
+                        <il><a href="#" class="text-decoration-none">Available Pets</a></il>
+                        <il><a href="#" class="text-decoration-none">Contact</a></il>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
