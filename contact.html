@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Fixed top nav for easy access to key sections on all screen sizes -->
+    <nav class="navbar navbar-expand-lg sticky-top" style="background-color: #CEF8E6;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="images/logo-pawsitive-futures.svg" alt="Pawsitive Futures Logo" height="45">
+            </a>
+            <!-- Toggle button for mobile & tablet views only-->
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                style="background-color: #FFE9F4;">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navigation links -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav flex-lg-row flex-column align-items-lg-center align-items-end text-end">
+                    <li class="nav-item px-lg-2">
+                        <a class="nav-link px-5" href="#">Home</a>
+                    </li>
+                    <li class="nav-item px-lg-2">
+                        <a class="nav-link px-4" href="#">Available Pets</a>
+                    </li>
+                    <li class="nav-item px-lg-2">
+                        <a class="nav-link px-5" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Layout starts with mobile first structure -->
+    <main class="container py-5">
+        <section class="mb-4">
+            <form class="d-flex justify-content-center">
+                <input type="search" class="form-control rounded-4" style="background-color: #EAF6FB;"
+                    placeholder="Search by breed...">
+            </form>
+        </section>
+
+        <!-- h1 with contact info -->
+        <section class="contact-section container py-5">
+            <h1 class="text-center fw-bold mb-4">Contact</h1>
+            
+            <!-- Add responsive photos for staff info -->
+            <div class="d-flex flex-column flex-md-row align-items-center justify-content-center gap-4 mb-4">
+                <picture>
+                    <source srcset="images/contact_person-desktop.jpg" media="(min-width: 1200px)">
+                    <source srcset="images/contact_person-tablet.jpg" media="(min-width: 600px) and (max-width: 1199px)">
+                    <img src="images/contact_person-mobile.jpg" alt="staff photo" class="img-fluid rounded-circle">
+                </picture>
+
+            </div>
+        </section>
+    
+</body>
+</html>
