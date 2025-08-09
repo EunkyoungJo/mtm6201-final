@@ -195,8 +195,6 @@ body {
     text-align: left;
 }
 
-
-
 /* raising height for tablet and desktop (Contact) */
 @media (min-width: 768px) {
     .contact-map,
@@ -215,6 +213,15 @@ body {
 }
 
 @media (min-width: 1200px) {
+    .contact-info {
+        display: flex;
+        align-items: center;
+    }
+
+    .contact-info img {
+        margin-right: 6rem;
+    }
+
     .contact-map,
     .contact-form {
         min-height: 500px;
