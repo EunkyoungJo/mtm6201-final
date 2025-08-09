@@ -64,11 +64,47 @@ body {
     height: 70px;
 }
 
+/* styling for sections */
+.section-wrapper {
+    padding: var(--padding);
+}
 
+/* hero section */
+.section-wrapper.bg-light-pink .container {
+    background-color: var(--light-pink);
+}
 
+@media (min-width: 768px) {
+    .section-wrapper.bg-light-pink .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 
+    .section-wrapper.bg-light-pink picture {
+        order: 2;
+        flex-shrink: 0;
+    }
 
+    .section-wrapper.bg-light-pink .text-left {
+        order: 1;
+        text-align: start;
+    }
 
+    .section-wrapper.bg-light-pink .btn-outline-dark {
+        align-self: flex-start;
+    }
+}
+
+@media (max-width: 767px) {
+    .section-wrapper.bg-light-pink .text-left span.d-md-none {
+        display: inline;
+    }
+
+    .section-wrapper.bg-light-pink .text-left span.d-none.d-md-inline {
+        display: none;
+    }
+}
 /* adjust size for tablet & desktop (Testimonial section)*/
 .profile-card {
     padding: 1.5rem;
