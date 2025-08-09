@@ -162,11 +162,40 @@ body {
 }
 
 /* change position for cta (Available Pets) */
-.cta-text-mobile {
-    text-align: left;
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
+.section-wrapper.adoption-message {
+    background-color: var(--light-blue);
 }
+
+.section-wrapper.adoption-cta {
+    background-color: var(--light-pink);
+}
+
+.adoption-cta .cta-text-mobile {
+    text-align: left;
+    margin-left: 4rem;    
+}
+
+.adoption-text h2 {
+    line-height: 1.7;
+}
+
+.adoption-text p {
+    margin-top: 1rem;
+}
+
+.they-waiting.bg-fffbea {
+    background-color: #FFFBEA;
+}
+
+.they-waiting.bg-light-pink {
+    background-color: var(--light-pink);
+}
+
+.d-none.d-md-block h3 {
+    text-align: left;
+}
+
+
 
 /* raising height for tablet and desktop (Contact) */
 @media (min-width: 768px) {
