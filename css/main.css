@@ -35,6 +35,34 @@ body {
     color: #0000FF;
 }
 
+/* adjust button color and hovering */
+.btn-dark {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.btn-dark:hover {
+    background-color: var(--secondary-color);
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+.btn-outline-dark {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+    background-color: var(--secondary-color);
+}
+
+.btn-outline-dark:hover {
+    color: var(--secondary-color);
+    border-color: var(--primary-color);
+    background-color: var(--primary-color);
+}
+
+.live-chat-btn img {
+    height: 70px;
+}
 
 
 
@@ -55,41 +83,7 @@ body {
 }
 
  
-/* adjust button color and hovering */
-.btn-dark {
-    background-color: #4A3526;
-    border-color: #4A3526;
-    color: #FDFDEE;
-}
 
-.btn-dark:hover {
-    background-color: #FDFDEE;
-    border-color: #4A3526;
-    color: #4A3526;
-}
-
-.btn-outline-dark {
-    color: #4A3526;
-    border-color: #4A3526;
-    background-color: #FDFDEE;
-}
-
-.btn-outline-dark:hover {
-    color: #FDFDEE;
-    border-color: #4A3526;
-    background-color: #4A3526;
-}
-
-.live-chat-btn {
-    background-color: transparent;
-    border: none;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-}
-
-.live-chat-btn img {
-    height: 70px;
-}
 
 /* switch color for tablet and desktop (New Friends Section) */
 #new-friends {
