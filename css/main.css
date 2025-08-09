@@ -70,6 +70,9 @@ body {
 }
 
 /* hero section */
+.section-wrapper.hero {
+    background-color: var(--light-pink);
+}
 .section-wrapper.bg-light-pink .container {
     background-color: var(--light-pink);
 }
@@ -99,26 +102,52 @@ body {
 @media (max-width: 767px) {
     .section-wrapper.bg-light-pink .text-left span.d-md-none {
         display: inline;
+        background-color: var(--light-pink);
     }
 
     .section-wrapper.bg-light-pink .text-left span.d-none.d-md-inline {
         display: none;
     }
 }
-/* adjust size for tablet & desktop (Testimonial section)*/
+/* adjust section color and profile card (Testimonial section) */
 .profile-card {
     padding: 1.5rem;
-    min-width: 250px;
-    align-items: center;
+    background-color: var(--light-blue);
+    border-radius: 0.5rem;
+    display: none;
 }
 
-@media (min-width: 992px) {
+@media (max-width: 767px) {
     .profile-card {
-        min-width: 400px;
+        display: flex;
+        background-color: var(--light-blue);
+    }
+    .profile-card .btn {
+        padding: 1rem 1.5rem;
+        font-size: 0.4rem;
+        white-space: nowrap;
+        width: 100px;
+    }
+    .section-wrapper.testimonial {
+        background-color: var(--light-blue);
     }
 }
 
- 
+@media (min-width: 768px) {
+    .profile-card {
+        align-items: center;
+        min-width: 250px;
+        max-width: 500px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .profile-card {
+        align-items: center;
+        min-width: 400px;
+        max-width: 500px;
+    }
+}
 
 
 /* switch color for tablet and desktop (New Friends Section) */
@@ -126,9 +155,9 @@ body {
     background-color: transparent;
 }
 
-@media (min-width: 600px) {
-    #new-friends {
-        background-color: #EAF6FB !important;
+@media (min-width: 768px) {   
+    .section-wrapper.new-friends-section {
+        background-color: var(--light-blue);
     }
 }
 
