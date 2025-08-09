@@ -22,7 +22,7 @@ body {
     background-color: var(--accent-color);
 }
 
-.nabar-toggler {
+.navbar-toggler {
     background-color: var(--light-pink);
 }
 
@@ -166,8 +166,16 @@ body {
     background-color: var(--light-blue);
 }
 
-.section-wrapper.adoption-cta {
-    background-color: var(--light-pink);
+@media (max-width: 767px) {
+    .section-wrapper.adoption-cta {
+        background-color: var(--light-pink);
+    }
+}
+
+@media (min-width: 768px) {
+    .section-wrapper.they-waitng {
+        background-color: var(--light-pink);
+    }
 }
 
 .adoption-cta .cta-text-mobile {
@@ -219,7 +227,7 @@ body {
     }
 
     .contact-info img {
-        margin-right: 6rem;
+        margin-right: 5rem;
     }
 
     .contact-map,
